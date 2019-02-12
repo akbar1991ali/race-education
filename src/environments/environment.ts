@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // baseUrl: 'http://localhost/we_stretch'
+ baseUrl: 'http://slowwly.robertomurray.co.uk/delay/9000/url/http://www.google.co.uk'
 };
 
 /*
