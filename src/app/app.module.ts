@@ -1,4 +1,4 @@
-import { PanelModule } from 'primeng/panel';
+
 import { routing } from './../app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -32,7 +32,6 @@ import { HeaderComponent } from './header/header.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     routing,
-    PanelModule,
     HttpClientModule
   ],
   providers: [
