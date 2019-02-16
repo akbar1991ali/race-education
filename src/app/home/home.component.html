@@ -17,7 +17,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto" style="font-size: 13px;">
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" [routerLink]="['/login']">Login</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Signup</a>
@@ -50,7 +50,7 @@
 	<div class="banner-sub-heading">
 	Here goes the secondary heading on hero banner
 	</div>
-	<button type="button" class="btn btn-warning text-dark btn-banner">Get started</button>
+	<button type="button" [routerLink]="['/login']" class="btn btn-warning text-dark btn-banner">Get started</button>
 	</div>
 	</div>
 </div>
@@ -60,69 +60,29 @@
     <div class="col-lg-8">
 	<div class="text-intro">
 	<h2>About Us</h2>
-		<p class="text-justify">Our Foundation is dedicated to transforming education so that all students can acquire and 
-      effectively apply the 
-      knowledge, attitudes, and skills necessary to thrive in their studies  and careers.
-       Founded by Chandan Kumar in 2015, we take a strategic approach
-        to improving education.</p>
+        <p class="text-justify">
+            We are bunch of people who started teaching with motive to make education available 
+            to those who are not very privileged economically but deserve equal chance to learn.
+        </p>
+        <p class="text-justify">
+            We offer a full range of accredited online courses from grades 9-12. Learn when and where you want, with Ontario
+             teachers and guidance counsellors supporting you along the way.
+        </p>
+  </div>
+
+  <div class="text-intro">
+	<h2>Why choose Us?</h2>
+        <p class="text-justify">
+            Choose it for your online learning because it’s flexible, affordable and accredited. Whether you need to earn credits, 
+            boost a grade or obtain a high school diploma, ILC helps you succeed!
+        </p>
+       
   </div>
 </div>
 <div class="col-lg-4">
-    <div class="text-intro">
-        <h2>Our Tutors</h2>
+    <div class="embed-responsive embed-responsive-16by9" >
+        <iframe allowfullscreen class="embed-responsive-item"  src="https://www.youtube.com/embed/jVIxe3YLNs8"></iframe>
         </div>
-    <div id="demo" class="carousel slide" data-ride="carousel" >
-
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-          <li data-target="#demo" data-slide-to="3"></li>
-        </ul>
-      
-        <!-- The slideshow -->
-        <div class="carousel-inner" style="border-radius: 10%">
-          <div class="carousel-item active">
-            <img src="./assets/teacher/chandan.jpg" alt="Chandan Kumar" title="Chandan Kumar">
-            <div class="carousel-caption">
-                <h3>Chandan Kumar</h3>
-                <!-- <p></p> -->
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/teacher/rupesh.jpeg" alt="Rupesh Kumar" title="Rupesh Kumar">
-            <div class="carousel-caption">
-                <h3>Rupesh Kumar</h3>
-                <!-- <p>We had such a great time in LA!</p> -->
-              </div>
-          </div>
-          <div class="carousel-item">
-              <img src="./assets/teacher/annu.jpg" alt="Annu Kumari" title="Annu Kumari">
-              <div class="carousel-caption">
-                  <h3>Annu Kumari</h3>
-                  <!-- <p>We had such a great time in LA!</p> -->
-                </div>
-            </div>
-          <div class="carousel-item">
-            <img src="./assets/teacher/raushan.jpg" alt="Raushan Kumar" title="Raushan Kumar">
-            <div class="carousel-caption">
-                <h3>Raushan Kumar</h3>
-                <!-- <p>We had such a great time in LA!</p> -->
-              </div>
-          </div>
-         
-        </div>
-      
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon" ></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      
-      </div>
 </div>
 </div>
 </div>

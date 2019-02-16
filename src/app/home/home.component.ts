@@ -8,7 +8,6 @@ import { Directive, ElementRef, Renderer, HostListener } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   step = 0;
-
   constructor() { }
 
   ngOnInit() {
