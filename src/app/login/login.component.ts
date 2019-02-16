@@ -1,5 +1,6 @@
 import { LoginService } from './../_services/login.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
+
 
 @Component({
   selector: 'app-login',
@@ -7,12 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  step = 0;
 
   constructor(private login:LoginService) { }
 
+
+
   ngOnInit() {
-    this.testData();
-    // this.userLogin();
+  }
+  @HostListener('window:scroll', ['$event']) 
+  doSomething(event) {
+ 
+    if(window.pageYOffset >=80)
+    {
+      // console.log("Scroll Event", window.pageYOffset );
+this.step=87;
+    }else
+    {
+      this.step=0;
+    }
   }
 
   userLogin() {
